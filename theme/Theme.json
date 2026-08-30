@@ -1,0 +1,14 @@
+﻿{
+  "name": "Gaming Theme",
+  "textClasses": {
+    "title": {
+      "fontFace": "Ithaca"
+    },
+    "header": {
+      "fontFace": "Ithaca"
+    },
+    "label": {
+      "fontFace": "Ithaca"
+    }
+  }
+}
