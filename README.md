@@ -170,6 +170,65 @@ gaming experience rather than feeling like a traditional dashboard control.
 
 ---
 
+# 📦 Data Sources
+
+This project combines a public video game dataset with personal Xbox gaming
+data to provide two different analytical perspectives: industry-level video
+game analysis and individual player analysis.
+
+## 🎮 Video Game Sales & Engagement Data
+
+The primary market and game library data used in this project comes from the
+**Video-Game-Sales-and-Engagement-Analysis** dataset available on Kaggle.
+
+**Source:**  
+[Video-Game-Sales-and-Engagement-Analysis - Kaggle](https://www.kaggle.com/datasets/bimalkumarsaini/video-game-sales-and-engagement-analysis)
+
+The dataset provided the foundation for the `vgsales` and `games` tables used
+throughout the Power BI model.
+
+These data were used to explore:
+
+- Video game sales over time
+- Platform performance
+- Genre distribution
+- Individual game performance
+- Differences between Nintendo, Xbox, PlayStation, and PC
+- Changes in genre popularity across gaming generations
+
+## 👤 Personal Xbox Gaming Data
+
+The Player One Profile incorporates my personal Xbox gaming history to add
+a second, player-level analytical perspective to the project.
+
+**Source:**  
+[My Game Collection - TrueAchievements](https://www.trueachievements.com/gamer/curse1/gamecollection)
+
+The data from my TrueAchievements game collection was used to support
+game-level and lifetime metrics including:
+
+- Gamerscore
+- TrueAchievement Score
+- Achievements earned
+- Completion percentage
+- Hours played
+- Game library size
+- Lifetime gaming statistics
+
+This data was intentionally incorporated as a personal "Easter egg" within
+the larger video game market analysis.
+
+Selecting an individual game changes the dashboard's filter context and
+dynamically updates the Player One metrics for that title. Selecting
+**Clear Aggro** removes the game selection and restores the lifetime player
+statistics.
+
+The raw personal gaming dataset is not distributed with this repository.
+The original collection can be viewed through the TrueAchievements source
+linked above.
+
+---
+
 # 🗃️ Data Model
 
 The report combines multiple datasets serving different analytical
