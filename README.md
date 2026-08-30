@@ -142,22 +142,30 @@ At the lifetime level, the dashboard calculates:
 - Days Consumed
 - Completionist Rating
 
-![Player One Profile](screenshots/07-player-one-profile.png)
+### Lifetime Player Profile
 
-### Interactive Game Profiles
+By default, the page provides a complete view of my lifetime Xbox gaming
+statistics and game history.
+
+![Player One Lifetime Profile](screenshots/07-player-one-profile.png)
+
+### 🎯 Interactive Game Profiles
 
 The game table is more than a list of titles. Selecting an individual game
-changes the context of the dashboard and dynamically updates the profile
-metrics to represent that specific game.
+changes the filter context of the dashboard and dynamically updates the
+profile metrics to represent that specific title.
 
 This allows the same report page to function as both a lifetime player
-profile and an individual game profile without navigating to another page.
+profile and an individual game profile without requiring the user to
+navigate to another page.
 
-The **Clear Aggro** button resets the selection and returns the dashboard
-to the player's lifetime statistics.
+![Player One Game Selected](screenshots/08-player-one-game-selected.png)
+
+The **Clear Aggro** button removes the game selection and restores the
+dashboard to the lifetime player view.
 
 The feature was intentionally wrapped in the terminology and visual style
-of the project so that Power BI's filtering behavior became part of the
+of the project so that Power BI's interactive filtering became part of the
 gaming experience rather than feeling like a traditional dashboard control.
 
 ---
@@ -229,14 +237,15 @@ video-game-market-analysis-power-bi/
 │   ├── data-model.png
 │   └── Microsoft-Power-BI-Storytelling.pptx
 │
-├── screenshots/
-│   ├── 01-start-menu.png
-│   ├── 02-main-menu.png
-│   ├── 03-nintendo.png
-│   ├── 04-xbox.png
-│   ├── 05-playstation.png
-│   ├── 06-pc.png
-│   └── 07-player-one-profile.png
+screenshots/
+├── 01-start-menu.png
+├── 02-main-menu.png
+├── 03-nintendo.png
+├── 04-xbox.png
+├── 05-playstation.png
+├── 06-pc.png
+├── 07-player-one-profile.png
+└── 08-player-one-game-selected.png  
 │
 └── theme/
     └── Theme.json
