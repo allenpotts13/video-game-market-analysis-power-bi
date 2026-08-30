@@ -1,2 +1,282 @@
-# video-game-market-analysis-power-bi
-Interactive Power BI analysis of video game sales, platform trends, genre performance, and personal gaming statistics.
+# 🎮 Video Game Market Analysis | Power BI
+
+An interactive Power BI analytics experience exploring video game sales,
+platform performance, genre trends, and personal gaming statistics.
+
+![Video Game Analysis Start Menu](screenshots/01-start-menu.png)
+
+## 📊 Project Overview
+
+This project was developed as a Power BI capstone focused on combining
+data analysis, visualization, data modeling, and storytelling within an
+interactive report.
+
+Rather than designing the project as a traditional business dashboard,
+I built the report around the visual language of a video game. Users enter
+through a Start Menu and navigate to an interactive Main Menu where they
+can explore the video game market across Nintendo, Xbox, PlayStation,
+and PC.
+
+The project also incorporates personal gaming data through a dedicated
+Player One Profile, providing a second analytical perspective focused on
+player behavior, achievements, completion, and playtime.
+
+![Main Menu](screenshots/02-main-menu.png)
+
+---
+
+## 🎯 Project Goals
+
+The project was designed to answer questions such as:
+
+- How has the video game market changed over time?
+- How do Nintendo, Xbox, PlayStation, and PC compare?
+- Which genres dominate individual gaming platforms?
+- Which titles have generated the greatest lifetime performance?
+- How has genre popularity changed across different generations?
+- What patterns can be identified within an individual player's gaming history?
+- How can Power BI navigation and visual design be used to create an
+  interactive storytelling experience?
+
+---
+
+## 🛠️ Technologies & Skills
+
+| Technology / Skill | Application |
+|---|---|
+| Power BI Desktop | Report development and interactive visualization |
+| Power Query | Data preparation and transformation |
+| DAX | Measures, KPIs, and analytical calculations |
+| Data Modeling | Relationships and dedicated date dimension |
+| Data Visualization | Trends, rankings, KPIs, and genre analysis |
+| Interactive Navigation | Menu-driven report navigation |
+| JSON | Custom Power BI report theme |
+| Data Storytelling | Converting analysis into a themed user experience |
+
+---
+
+## 🕹️ Interactive Main Menu
+
+The Main Menu serves as the central navigation and analysis hub for the
+report.
+
+Users can filter the analysis by campaign year, class, and gaming system
+while viewing high-level metrics and a timeline comparing platform
+performance.
+
+Key metrics presented on the Main Menu include:
+
+- Credits Earned
+- Game Library
+- Systems Online
+- Quest Queue
+- Active Sessions
+- Average Player Rating
+
+The gaming terminology was intentionally used to integrate analytical
+metrics into the overall theme of the report.
+
+![Main Menu Dashboard](screenshots/02-main-menu.png)
+
+---
+
+# 🎮 Platform Analysis
+
+Dedicated report pages provide deeper analysis for the major gaming
+platform ecosystems.
+
+Each page maintains a common analytical structure while using
+platform-specific visual design.
+
+The platform dashboards include:
+
+- Lifetime Credits
+- Game Library Size
+- Legendary Title
+- Current Meta
+- Platform Timeline by Genre
+- Genre Dominance
+- Highest-performing titles
+
+## 🔴 Nintendo
+
+The Nintendo dashboard analyzes the company's game catalog and historical
+genre performance.
+
+![Nintendo Dashboard](screenshots/03-nintendo.png)
+
+## 🟢 Xbox
+
+The Xbox dashboard provides the same analytical framework while adapting
+the report's visual identity to the Xbox ecosystem.
+
+![Xbox Dashboard](screenshots/04-xbox.png)
+
+## 🔵 PlayStation
+
+The PlayStation dashboard explores historical performance, genre
+distribution, and leading titles within the PlayStation ecosystem.
+
+![PlayStation Dashboard](screenshots/05-playstation.png)
+
+## 🖥️ PC
+
+The PC dashboard applies the analysis to PC gaming, highlighting differences
+in genre distribution and leading titles compared with console platforms.
+
+![PC Dashboard](screenshots/06-pc.png)
+
+---
+
+# 👤 Player One Profile
+
+The Player One Profile shifts the analysis from the overall video game
+market to individual player behavior.
+
+Personal gaming data is used to calculate metrics including:
+
+- Lifetime Gamerscore
+- TrueAchievement Score
+- Game Library Size
+- Total Hours Played
+- Days Consumed
+- Completionist Rating
+
+The dashboard also provides game-level achievement, completion, and
+playtime information and identifies the games responsible for the
+greatest amount of player engagement.
+
+![Player One Profile](screenshots/07-player-one-profile.png)
+
+---
+
+# 🗃️ Data Model
+
+The report combines multiple datasets serving different analytical
+purposes, including video game information, sales information, and
+personal gaming statistics.
+
+A dedicated Date Table supports temporal analysis and provides fields
+including date, month, and year.
+
+![Power BI Data Model](docs/data-model.png)
+
+The model supports calculations and measures used throughout the report,
+including:
+
+- Average Player Rating
+- Active Sessions
+- Quest Queue
+- Game Library
+- Systems Online
+- Credits Earned
+- Lifetime Credits
+- Legendary Title
+- Current Meta
+- Completionist Rating
+- Lifetime Gamerscore
+- Days Consumed
+- Time Lost to Gaming
+
+---
+
+# 🎨 Report Design
+
+Visual design was treated as part of the analytical experience rather
+than simply decoration.
+
+The report uses a custom gaming-inspired interface with:
+
+- A video game-style Start Menu
+- Menu-based navigation
+- Platform-specific backgrounds and branding
+- Consistent dashboard layouts between platforms
+- Gaming terminology for analytical KPIs
+- A custom Power BI JSON theme
+
+The custom theme is included in:
+
+`theme/Theme.json`
+
+This approach allowed the report to retain a consistent analytical
+structure while giving each section its own visual identity.
+
+---
+
+# 📁 Repository Structure
+
+```text
+video-game-market-analysis-power-bi/
+│
+├── README.md
+│
+├── dashboard/
+│   └── Allen_Potts_PowerBI_Capstone.pbix
+│
+├── docs/
+│   ├── data-model.png
+│   └── Microsoft-Power-BI-Storytelling.pptx
+│
+├── screenshots/
+│   ├── 01-start-menu.png
+│   ├── 02-main-menu.png
+│   ├── 03-nintendo.png
+│   ├── 04-xbox.png
+│   ├── 05-playstation.png
+│   ├── 06-pc.png
+│   └── 07-player-one-profile.png
+│
+└── theme/
+    └── Theme.json
+```
+
+---
+
+# 🚀 Running the Project
+
+To explore the complete interactive report:
+
+1. Download the `.pbix` file from the `dashboard` directory.
+2. Open the file using Microsoft Power BI Desktop.
+3. Begin at the Start Menu.
+4. Select **START** to enter the report.
+5. Navigate between the Main Menu, platform dashboards, and Player One Profile.
+6. Use the available filters and interactive visuals to explore the data.
+
+> Power BI Desktop is required to open the `.pbix` file.
+
+---
+
+# 💡 What I Learned
+
+This project reinforced that effective analytics requires more than
+creating individual charts.
+
+Building the report required thinking about the complete analytical
+experience—from preparing and modeling the data to creating calculations,
+selecting appropriate visualizations, designing navigation, and determining
+how users would move through the analysis.
+
+The project also gave me the opportunity to combine a personal interest
+in gaming with data analytics and experiment with presenting analytical
+information through a nontraditional interface.
+
+---
+
+## 📄 Additional Documentation
+
+The original Power BI storytelling presentation is available in:
+
+`docs/Microsoft-Power-BI-Storytelling.pptx`
+
+The complete Power BI report is available in:
+
+`dashboard/Allen_Potts_PowerBI_Capstone.pbix`
+
+---
+
+## 👨‍💻 Author
+
+**Craig Allen Potts**
+
+Data Engineering • Business Intelligence • Software Engineering
