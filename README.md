@@ -131,9 +131,9 @@ in genre distribution and leading titles compared with console platforms.
 # 👤 Player One Profile
 
 The Player One Profile shifts the analysis from the overall video game
-market to individual player behavior.
+market to my own Xbox gaming history.
 
-Personal gaming data is used to calculate metrics including:
+At the lifetime level, the dashboard calculates:
 
 - Lifetime Gamerscore
 - TrueAchievement Score
@@ -142,11 +142,23 @@ Personal gaming data is used to calculate metrics including:
 - Days Consumed
 - Completionist Rating
 
-The dashboard also provides game-level achievement, completion, and
-playtime information and identifies the games responsible for the
-greatest amount of player engagement.
-
 ![Player One Profile](screenshots/07-player-one-profile.png)
+
+### Interactive Game Profiles
+
+The game table is more than a list of titles. Selecting an individual game
+changes the context of the dashboard and dynamically updates the profile
+metrics to represent that specific game.
+
+This allows the same report page to function as both a lifetime player
+profile and an individual game profile without navigating to another page.
+
+The **Clear Aggro** button resets the selection and returns the dashboard
+to the player's lifetime statistics.
+
+The feature was intentionally wrapped in the terminology and visual style
+of the project so that Power BI's filtering behavior became part of the
+gaming experience rather than feeling like a traditional dashboard control.
 
 ---
 
@@ -249,17 +261,48 @@ To explore the complete interactive report:
 
 # 💡 What I Learned
 
-This project reinforced that effective analytics requires more than
-creating individual charts.
+The biggest challenge of this project wasn't necessarily working with the
+data itself. It was taking everything I had learned throughout the course
+and combining it into a complete Power BI presentation.
 
-Building the report required thinking about the complete analytical
-experience—from preparing and modeling the data to creating calculations,
-selecting appropriate visualizations, designing navigation, and determining
-how users would move through the analysis.
+The project pushed me to think beyond whether a calculation or visualization
+was technically correct. I had to think about the experience of the person
+using the report:
 
-The project also gave me the opportunity to combine a personal interest
-in gaming with data analytics and experiment with presenting analytical
-information through a nontraditional interface.
+- Is the information clear?
+- Is the layout intuitive?
+- Does a visualization communicate something useful, or does it make the
+  analysis more confusing?
+- Can the report be visually interesting without distracting from the data?
+- How can multiple report pages feel like parts of the same experience?
+
+Using video game data gave me a subject I genuinely enjoyed exploring and
+allowed me to have fun with those decisions. Rather than creating a
+traditional dashboard, I leaned into the gaming theme and experimented with
+navigation, terminology, backgrounds, platform-specific designs, and
+interactive elements.
+
+There are still visual and layout decisions I would approach differently
+today, and there is more I would like to explore with the report. However,
+I am proud of the final product because it represents the point where the
+individual Power BI concepts I had learned began to come together as a
+complete analytical experience.
+
+## 🎮 A Personal Easter Egg
+
+One of my favorite additions was incorporating my own Xbox gaming history
+into the **Player One Profile**.
+
+The page begins by showing my lifetime gaming statistics. Selecting an
+individual game dynamically changes the profile metrics to reflect the
+statistics for that specific title.
+
+Selecting **Clear Aggro** removes the game selection and restores the
+dashboard to the lifetime player view.
+
+This started as a fun personal addition to the project, but it also became
+a practical demonstration of Power BI's interactive filtering and dynamic
+report context.
 
 ---
 
